@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { VueAppLoader } from './microfrontends/VueAppLoader';
+import { Vue3AppLoader } from './microfrontends/Vue3AppLoader';
+//import { VueAppLoader } from './microfrontends/VueAppLoader';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         React Host app
       </header>
       <div>Includes Vue app below</div>
-      <VueAppLoader />
+      <Vue3AppLoader />
     </div>
   );
 }

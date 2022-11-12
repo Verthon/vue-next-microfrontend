@@ -13,7 +13,9 @@ module.exports = function override(config, _env) {
         name: "host",
         remotes: {
           "@zx-mfe/vueRemote": "vueRemote@http://localhost:8080/remoteEntry.js",
+          "@zx-mfe/vue3Remote": "remote2@http://localhost:8080/remoteEntry.js"
         },
+        //shared: require("./package.json").dependencies,
       }),
     ]
   };

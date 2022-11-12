@@ -1,0 +1,24 @@
+{
+  "name": "vue-next-microfrontend",
+  "version": "1.0.0",
+  "description": "Next.js POC will be added later on - for now it will be: * host as React SPA * remote as Vue 2 SPA on Vue CLI v5",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --names \"HOST,VUEREMOTE\" -c \"bgYellow.black.bold,blue.bold,magenta.bold,green.bold\" \"cd host && npm start\" \"cd vueRemote && npm run serve\"",
+    "install": "cd host && npm i && cd ../vueRemote && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verthon/vue-next-microfrontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Verthon/vue-next-microfrontend/issues"
+  },
+  "homepage": "https://github.com/Verthon/vue-next-microfrontend#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}

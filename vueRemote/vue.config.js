@@ -7,12 +7,15 @@ module.exports = defineConfig({
     devServer: {
       historyApiFallback: true
     },
+    optimization: {
+      splitChunks: false
+    },
     plugins: [
       new ModuleFederationPlugin({
-        name: 'vue-remote',
+        name: 'vueRemote',
         filename: 'remoteEntry.js',
         exposes: {
-          './vueRemote': './src/expose.ts'
+          './sharedApp': './src/expose.ts'
         }
       })
     ]

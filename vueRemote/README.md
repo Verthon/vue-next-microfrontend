@@ -1,4 +1,4 @@
-# vue-remote
+# vueRemote
 
 ## Project setup
 ```

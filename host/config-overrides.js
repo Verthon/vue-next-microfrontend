@@ -11,7 +11,9 @@ module.exports = function override(config, _env) {
       new webpack.EnvironmentPlugin({ BUILD_DATE: buildDate }),
       new ModuleFederationPlugin({
         name: "host",
-        remotes: {},
+        remotes: {
+          "@zx-mfe/vueRemote": "vueRemote@http://localhost:8080/remoteEntry.js",
+        },
       }),
     ]
   };
